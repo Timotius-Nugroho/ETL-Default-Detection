@@ -4,8 +4,12 @@ https://8080-firebase-default-detection-1757903301722.cluster-c36dgv2kibakqwbbbs
 AKTIF VENV
 source venv/bin/activate
 
+STOP VENV
+deactivate
+
 UP DOCKER
 docker compose --profile airflow --profile db up -d
 
 DOWN DOCKER
 docker compose down
+
