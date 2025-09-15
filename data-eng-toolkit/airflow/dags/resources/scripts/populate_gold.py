@@ -1,3 +1,9 @@
+# NICE TO HAVE
+# Ubah istilah asing ke bahasa Indonesia (ex: from "Male" to "Laki-laki"), etc
+
+# NICE TO HAVE
+# pisahkan string query menjadi variable berisi string kedalam folder /scripts/query/(ex:build_dim_sex_table.py, etc...)
+
 from resources.utils.db_conn import conn
 
 def main():

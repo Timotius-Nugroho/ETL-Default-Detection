@@ -1,4 +1,5 @@
-# file: resources/prepare_prediction_dataset.py
+# NICE TO HAVE
+# pisahkan string query menjadi variable berisi string kedalam folder /scripts/query/(ex:build_credit_card_default_table.py)
 
 from resources.utils.db_conn import conn
 

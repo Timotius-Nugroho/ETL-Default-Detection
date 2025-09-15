@@ -1,3 +1,10 @@
+# NEED TO DO:
+# install lib pip yg dibutuhakn dengan venv pada source venv/bin/activate
+# fetch dataset pada tmp_ml_pred.credit_card_default
+# lakukan predict dengan model, lalu ouput true/false 
+# akan disimpan pada kolom gold.fact_credit.default_flag berdasarkan client_id terkait
+
+
 import pandas as pd
 # import joblib
 from resources.utils.db_conn import conn
