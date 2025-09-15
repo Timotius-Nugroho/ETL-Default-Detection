@@ -1,10 +1,16 @@
 # To learn more about how to use Nix to configure your environment
-# see: https://developers.google.com/idx/guides/customize-idx-env
+# see: https://firebase.google.com/docs/studio/customize-workspace
 { pkgs, ... }: {
   # Which nixpkgs channel to use.
   channel = "stable-24.05"; # or "unstable"
+  services.docker.enable = true;
   # Use https://search.nixos.org/packages to find packages
   packages = [
+    pkgs.jdk19
+    pkgs.python311
+    pkgs.python311Packages.pip
+    pkgs.docker-compose
+    pkgs.gnumake
     # pkgs.go
     # pkgs.python311
     # pkgs.python311Packages.pip
@@ -16,8 +22,11 @@
   idx = {
     # Search for the extensions you want on https://open-vsx.org/ and use "publisher.id"
     extensions = [
+      "cweijan.vscode-database-client2"
+      "rangav.vscode-thunder-client"
+      "ms-azuretools.vscode-docker"
+      "ms-python.python"
       # "vscodevim.vim"
-      "google.gemini-cli-vscode-ide-companion"
     ];
     # Enable previews
     previews = {

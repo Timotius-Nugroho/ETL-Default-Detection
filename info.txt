@@ -1,0 +1,11 @@
+URL AIRFLOW
+https://8080-firebase-default-detection-1757903301722.cluster-c36dgv2kibakqwbbbsgmia3fny.cloudworkstations.dev/home
+
+AKTIF VENV
+source venv/bin/activate
+
+UP DOCKER
+docker compose --profile airflow --profile db up -d
+
+DOWN DOCKER
+docker compose down
