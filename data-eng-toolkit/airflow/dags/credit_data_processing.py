@@ -5,6 +5,7 @@ from resources.scripts.populate_silver import main as populate_silver
 from resources.scripts.populate_gold import main as populate_gold
 from resources.scripts.prepare_prediction_dataset import main as prepare_prediction_dataset
 from resources.scripts.run_prediction import main as run_prediction
+from resources.scripts.run_math_prediction import main as run_math_prediction
 
 @dag(
     schedule="0 0 1 * *", 
@@ -32,7 +33,7 @@ def credit_data_processing():
 
     @task(task_id="run_prediction_task")
     def predict():
-        run_prediction()
+        run_math_prediction()
 
     cleanup() >> silver() >> gold() >> prepare() >> predict()
 

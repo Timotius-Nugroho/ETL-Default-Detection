@@ -83,10 +83,7 @@ def main():
             ph.pay_status,
             bs.bill_amount,
             p.payment_amount,
-            CASE 
-              WHEN ph.pay_status > 0 OR (p.payment_amount < (bs.bill_amount * 0.3)) 
-              THEN TRUE ELSE FALSE
-            END AS default_flag
+            FALSE AS default_flag
         FROM silver.payment_history ph
         JOIN silver.bill_statements bs 
              ON ph.client_id = bs.client_id AND ph.month = bs.month
