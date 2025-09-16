@@ -20,7 +20,11 @@ RUN pip install --no-cache-dir \
     "pyspark==3.5.4" \
     "apache-airflow[statsd]==2.10.5" \
     "apache-airflow-providers-apache-hive==9.0.0" \
-    "apache-airflow-providers-apache-spark==5.0.0" \
-    "pandas==2.2.3" \
-    "scikit-learn==1.5.2" \
-    "psycopg2-binary==2.9.9"
+    "apache-airflow-providers-apache-spark==5.0.0"
+
+# Install library tambahan project (pisah supaya gak bentrok resolusi)
+RUN pip install --no-cache-dir \
+    pandas==2.2.3 \
+    scikit-learn==1.5.2 \
+    psycopg2-binary==2.9.9 \
+    pyspark==3.5.4
