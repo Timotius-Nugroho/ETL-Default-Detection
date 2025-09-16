@@ -1,10 +1,3 @@
-# NEED improve 
-# berikan filter tambahan sebagai berikut
-# bill_statements.bill_amount >= 0
-
-# NICE TO HAVE
-# pisahkan string query menjadi variable berisi string kedalam folder /scripts/query/(ex:build_credit_client_table.py, etc...)
-
 from resources.utils.db_conn import conn
 from resources.scripts.query.build_clients_table import build_sql as clients
 from resources.scripts.query.build_payment_history_table import build_sql as payment_history
