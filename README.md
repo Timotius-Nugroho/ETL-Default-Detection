@@ -58,11 +58,11 @@ The architecture follows a layered data pipeline:
 
 data-eng-toolkit/
 └── airflow/
-    └── dags/
-        ├── credit_data_processing.py
-        └── resources/
-            ├── scripts/  # Python scripts for each task
-            └── utils/    # Utilities (e.g., db_conn.py)
+ └── dags/
+  ├── credit_data_processing.py
+  └── resources/
+  ├── scripts/  # Python scripts for each task
+  └── utils/    # Utilities (e.g., db_conn.py)
 
 - `data-eng-toolkit/airflow/dags/` → Contains the Airflow DAG definition.  
 - `data-eng-toolkit/airflow/dags/resources/scripts/` → Python scripts for DAG tasks.  
