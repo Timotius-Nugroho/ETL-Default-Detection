@@ -28,7 +28,7 @@ If it cannot be predicted early, banks and financial institutions may suffer sig
 
 The architecture follows a layered data pipeline:  
 
-![Data Platform Design](https://github.com/user-attachments/assets/93d7b75c-df10-456e-814d-2b4e025f3512)
+![Data Platform Design](https://github.com/user-attachments/assets/323ab4b5-480c-4e57-a88d-4f46b5e8656c)
 
 - **Source (External Schema)**  
   Credit application database: `clients`, `bill_statements`, `payment_history`, `payments`.
@@ -92,7 +92,7 @@ The DAG is defined in
 
 ## 6. Data Modeling
 
-![Data Modeling](https://github.com/user-attachments/assets/323ab4b5-480c-4e57-a88d-4f46b5e8656c)
+![Data Modeling](https://github.com/user-attachments/assets/93d7b75c-df10-456e-814d-2b4e025f3512)
 
 - **Silver Layer**  
   Mirrors the source schema, but with cleansed and standardized data.  
